@@ -1,5 +1,14 @@
+import { useState } from 'react'
+import { Container } from './styles'
 
 
-export const Sidebar = () => {
-  return <h1>sidebar</h1>
+type SidebarProps = {}
+
+export const Sidebar = (props: SidebarProps) => {
+  const [drawerOpen, setDrawerOpen] = useState(true)
+  return (
+    <Container>
+      Sidebar
+    </Container>
+  )
 }

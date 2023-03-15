@@ -9,3 +9,10 @@ react hooks - estudar hooks personalizados;
 ---
 dia 1: 
 - Criei a estrutura inicial do projeto;
+
+dia 2: 
+- criei o sidebar
+
+problemas:
+
+[]ao iniciar sistema deu pau no absolute imports;
