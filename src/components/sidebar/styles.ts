@@ -5,17 +5,14 @@ export const Container = styled.aside`
   background-color: ${theme.colors.red};
 
   width: 7.75rem;
+  width: 10rem;
+  /* height: 100vh; */
 
   padding: 2rem 0;
   overflow: hidden;
 
   display: flex;
-  flexdirection: column;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-  height: 100vh;
-  /* width: 30%; */
-  /* padding-left: 15px; */
-  /* margin-left: 15px; */
-  /* float: left; */
 `
