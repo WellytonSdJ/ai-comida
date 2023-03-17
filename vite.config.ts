@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.scss'],
-    // alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
     alias: { '@': path.join(__dirname, 'src') }
   },
 }

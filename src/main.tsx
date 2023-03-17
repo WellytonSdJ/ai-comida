@@ -1,9 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import MainPage from '@/pages/main-page'
+
+import { GlobalStyle } from './styles/global'
+import { Normalize } from 'styled-normalize'
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle />
+    <Normalize />
+    <MainPage />
   </React.StrictMode>,
 )

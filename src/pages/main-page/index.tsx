@@ -5,7 +5,10 @@ import { Sidebar } from '../../components'
 export default function MainPage() {
   return (
     <>
-      <Sidebar />
+      <div style={{ display: 'flex' }}>
+        <Sidebar />
+        <h1>main</h1>
+      </div>
     </>
 
   )

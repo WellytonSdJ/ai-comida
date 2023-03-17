@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container } from './styles'
+// import { ReactComponent as BurgerIcon } from '@/assets/burger.svg'
 import BurgerIcon from '@/assets/burger.svg'
 import menuImg from '@/assets/menu.svg'
 
@@ -15,8 +16,8 @@ export const Sidebar = (props: SidebarProps) => {
       <nav>
         <ul>
           <li>
-            <a href="#">
-              {/* <BurgerIcon/> */}
+            <a href="#" className='active'>
+              {/* <BurgerIcon /> */}
               <img src={BurgerIcon} alt="Icone de hamburguer" />
               <span>Hamburguer</span>
             </a>
