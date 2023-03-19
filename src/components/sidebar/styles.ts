@@ -5,7 +5,7 @@ export const Container = styled.aside`
   background-color: ${theme.colors.red};
 
   width: 7.75rem;
-  /* width: 15rem; */
+  transition: 0.3s ease;
   height: 100vh;
 
   padding: 2rem 0;
@@ -16,7 +16,15 @@ export const Container = styled.aside`
   justify-content: center;
   align-items: center;
 
+  &.active {
+    width: 15rem;
+    transition: 0.3s ease;
+  }
+
   button {
+    display: inline;
+    visibility: show;
+
     background: none;
     width: 100%;
     border: none;
@@ -39,6 +47,7 @@ export const Container = styled.aside`
     li {
       list-style: none;
       a {
+        background: inherit;
         width: : fit-content;
         position: relative;
         padding-left: 1.875rem;
@@ -63,31 +72,64 @@ export const Container = styled.aside`
         }
 
         &.active {
-          &::after {
-            content: '';
-            position absolute;
-            left: 0;
-            top: 50%;
-            bottom: 0;
-            transform: translateY(-50%);
-
-            background-color: ${theme.colors.yellow};
-            width: 5px;
-            height: calc(100% + 10px);
-
-            border-radius: 0 5px 5px 0;
-          }
-
-          img path{
-            fill: ${theme.colors.yellow};
-            /* não ta funcionando */
-          }
-
-          span {
-            color: ${theme.colors.yellow}
-          }
+          border-radius: 8px;
+          background: ${theme.colors.yellow};
+          transition: 0.7s;
         }
       }
     }
   }
+
+  @media (max-width: 768px){
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+
+    width: 100%;
+    height: 5rem;
+    padding: 0 0;
+    overflow-y: auto;
+
+    button {
+    display: none;
+    visibility: hidden;
+  }
+
+  nav {
+    height: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+
+        a{
+          flex-direction: column;
+          padding: 0rem;
+
+          img {
+            width: 3.25rem;
+            height: 3.25rem;
+          }
+        }
+
+        span {
+        display: none;
+      }
+      }
+
+      
+    }
+  }
+  
+
+  }
+
+
+  
 `
